@@ -14,7 +14,7 @@ def strip_us_phonenumbers(x):
         x = x.replace(m.raw_string, '<US_PHONE_NUM>')
     return x
 
-df = pd.read_csv('HTlabeled.csv')
+df = pd.read_csv('data/HTlabeled.csv')
 
 # empty columns
 del df['tip']
